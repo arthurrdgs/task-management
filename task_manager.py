@@ -1,12 +1,8 @@
 #=====importing libraries===========
-'''This is the section where you will import libraries'''
 from datetime import date #adding a module to get the current date
+
 #====Login Section====
-'''Here you will write code that will allow a user to login.
-    - Your code must read usernames and password from the user.txt file
-    - You can use a list or dictionary to store a list of usernames and passwords from the file.
-    - Use a while loop to validate your user name and password.
-'''
+
 #creating 2 lists the will be used to store the usernames and passwords from user.txt
 username_list = []
 password_list = []
