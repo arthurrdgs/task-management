@@ -1,1 +1,1 @@
-# task-management
+Task management - Python: This project was built to provide the costumer with a task management program and be able to add new usernames, create new tasks and assign them to specific users as well as viewing and editing them. That is done by reading a data from a text file and updating the data inside the text file
