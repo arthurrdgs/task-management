@@ -53,15 +53,8 @@ while True:
     :\n ''').lower()
 
     if menu == 'r':
-        '''In this block you will write code to add a new user to the user.txt file
-        - You can follow the following steps:
-            - Request input of a new username
-            - Request input of a new password
-            - Request input of password confirmation.
-            - Check if the new password and confirmed password are the same.
-            - If they are the same, add them to the user.txt file,
-            - Otherwise you present a relevant message.'''
-        #asking if the username is admin, as hes the only one that can use the 'r' funciton
+        
+        #if the username is admin, as hes the only one that can use the 'r' funciton
         if username == 'admin':
             
             #asking the user for a new username, a password and a password check
@@ -81,16 +74,6 @@ while True:
 
             
     elif menu == 'a':
-        '''In this block you will put code that will allow a user to add a new task to task.txt file
-        - You can follow these steps:
-            - Prompt a user for the following: 
-                - A username of the person whom the task is assigned to,
-                - A title of a task,
-                - A description of the task and 
-                - the due date of the task.
-            - Then get the current date.
-            - Add the data to the file task.txt and
-            - You must remember to include the 'No' to indicate if the task is complete.'''
         
         #asking the user to enter:
         #the assigned user, the task title and description, the due date for the task, the current date and if task is completed.
@@ -105,13 +88,7 @@ while True:
             a_items.write(f"\n{user_assigned}, {task_title}, {task_description}, {current_date}, {task_date}, No")
         
     elif menu == 'va':
-        '''In this block you will put code so that the program will read the task from task.txt file and
-         print to the console in the format of Output 2 presented in the L1T19 pdf file page 6
-         You can do it in this way:
-            - Read a line from the file.
-            - Split that line where there is comma and space.
-            - Then print the results in the format shown in the Output 2 in L1T19 pdf
-            - It is much easier to read a file using a for loop.'''
+   
         #opening the file and printing every line in the tasks file
         with open('tasks.txt', 'r') as tasks_file:
             
@@ -128,14 +105,7 @@ while True:
                 print("\n"+"_"*80)
 
     elif menu == 'vm':
-        '''In this block you will put code the that will read the task from task.txt file and
-         print to the console in the format of Output 2 presented in the L1T19 pdf
-         You can do it in this way:
-            - Read a line from the file
-            - Split the line where there is comma and space.
-            - Check if the username of the person logged in is the same as the username you have
-            read from the file.
-            - If they are the same you print the task in the format of output 2 shown in L1T19 pdf '''
+        
         with open('tasks.txt', 'r') as user:
             for line in user:
                 line = line.strip('\n').split(", ")
